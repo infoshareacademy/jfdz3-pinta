@@ -71,6 +71,10 @@ div.comming-soon {
 
 /* ======== Team section - Kris ======== */
 
+.team-header {
+    text-align: center;
+}
+
 .team-member {
     width: 250px;
     border: dotted;
@@ -96,3 +100,28 @@ div.comming-soon {
     color: slategrey;
 }
 
+/* ======== Footer section - Kris ======== */
+
+footer {
+    padding: 30 px;
+    background: black;
+    color: whitesmoke;
+
+}
+
+.contact-phone {
+
+}
+
+.contact-address {
+    
+    
+}
+
+.contact-e-mail-link {
+    color: #ffffff;
+}
+
+.contact-e-mail {
+
+}

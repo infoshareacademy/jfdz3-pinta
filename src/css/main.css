@@ -44,3 +44,46 @@ h3  {
 
 }
 
+
+nav{
+
+    float:left;
+    background-color: #b41558;
+    min-width: 520px;
+}
+.logo {
+
+    float:left;
+    padding: 20px;
+
+
+}
+
+.options {
+
+    float:left;
+    padding: 20px;
+}
+
+.input{
+
+    float:left;
+    padding: 20px;
+}
+
+li  {
+
+    display: inline-block;
+
+}
+
+li a{
+
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+
+    text-underline: none;
+}

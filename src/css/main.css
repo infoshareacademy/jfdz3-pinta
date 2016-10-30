@@ -152,18 +152,31 @@ div.comming-soon {
 
 /* ======== 8. Team section - Kris ======== */
 
+.team {
+    margin-bottom: 50px;
+}
 
+#our-team {
+    text-transform: uppercase;
+}
 
 .team-header {
     text-align: center;
+    margin-top: 50px;
 }
 
+.team-member-center {
+    margin: 0 auto;
+    width: 1190px;
+}
 
 .team-member {
-    width: 250px;
+    width: 240px;
     border: dotted;
     padding: 15px;
     display: inline-block;
+    margin: 25px auto;
+    margin-left: 10px;
 }
 
 .team-member-header {
@@ -189,23 +202,28 @@ div.comming-soon {
 
 footer {
     padding: 30 px;
-    background: black;
+    background: darkslategray;
     color: whitesmoke;
 
-}
-
-.contact-phone {
 
 }
 
-.contact-address {
-
+.contact-center {
+    margin: 0 auto;
+    width: 820px;
 }
 
-.contact-e-mail-link {
-    color: #ffffff;
+.contact-data {
+    width: 220px;
+    border: dotted;
+    padding: 15px;
+    display: inline-block;
+    margin: 25px auto;
+    margin-left: 10px;
+    font-size: 1.5em;
 }
 
-.contact-e-mail {
-
+.contact-map {
+    margin: 25px auto;
+    margin-left: 10px;
 }

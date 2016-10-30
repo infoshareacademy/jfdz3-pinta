@@ -44,6 +44,44 @@ h3  {
 
 }
 
+/* ======== 5. EVENT SECTION ====== */
+
+.events {
+    width: 80%;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+.events-p {
+    width: 40%;
+    margin: 60px auto 0;
+}
+
+.events-images {
+    margin: 90px 0 30px;
+    text-align: center;
+}
+
+.event-image {
+    margin: 0 70px 0 70px;
+    display: inline;
+}
+
+/* ======== 6. TESTIMONIAL SECTION ====== */
+
+.testimonial {
+    background-color: #dedede;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 40px;
+    margin: 80px 0 0 0;
+}
+
+.p-testimonial {
+    width: 70%;
+    text-align: right;
+}
+
 
 /* ======== Sign-up section - Kris ======== */
 

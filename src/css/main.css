@@ -14,7 +14,7 @@
     9. Footer
    ========================================================================== */
 
-/* ======== GLobal Styles ======== */
+/* ======== 1. GLobal Styles ======== */
 
 body {
     font-family: 'Lato', sans-serif;
@@ -43,7 +43,6 @@ h3  {
     letter-spacing: 2px;
 
 }
-
 
 nav{
 
@@ -86,4 +85,123 @@ li a{
 ul{
 
     text-underline: none;
+}
+
+/* ======== 5. Event Section ====== */
+
+.events {
+    width: 80%;
+    margin: 0 auto 0;
+    text-align: center;
+}
+
+.events-p {
+    width: 40%;
+    margin: 60px auto 0;
+}
+
+.events-images {
+    margin: 90px 0 30px;
+    text-align: center;
+}
+
+.event-image {
+    margin: 0 70px 0 70px;
+    display: inline;
+}
+
+/* ======== 6. Testimonial Section ====== */
+
+.testimonial {
+    background-color: #dedede;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 40px;
+    margin: 80px 0 0 0;
+}
+
+.p-testimonial {
+    width: 70%;
+    text-align: right;
+}
+
+
+/* ======== 7. Sign-up section - Kris ======== */
+
+div.comming-soon {
+    background: darkgray;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    padding: 15px 30px 25px 30px;
+    color: #ffffff;
+}
+
+.button {
+    background-color: #005580;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* ======== 8. Team section - Kris ======== */
+
+.team-header {
+    text-align: center;
+}
+
+.team-member {
+    width: 250px;
+    border: dotted;
+    padding: 15px;
+}
+
+.team-member-header {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: solid ;
+
+}
+
+.team-member-photo {
+    padding: 20px;
+    text-align: center;
+
+}
+
+.team-member-description {
+    padding: 20px;
+    color: slategrey;
+}
+
+/* ======== 9. Footer section - Kris ======== */
+
+footer {
+    padding: 30 px;
+    background: black;
+    color: whitesmoke;
+
+}
+
+.contact-phone {
+
+}
+
+.contact-address {
+
+}
+
+.contact-e-mail-link {
+    color: #ffffff;
+}
+
+.contact-e-mail {
+
 }

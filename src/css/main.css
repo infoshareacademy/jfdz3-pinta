@@ -17,12 +17,12 @@
 /* ======== 1. GLobal Styles ======== */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Exo 2', sans-serif;
     font-size: 12pt;
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Exo 2', sans-serif;
 
 }
 
@@ -52,6 +52,10 @@ h3  {
     text-align: center;
 }
 
+.img-circle {
+    border-radius: 50%;
+}
+
 .events-p {
     width: 40%;
     margin: 60px auto 0;
@@ -67,19 +71,28 @@ h3  {
     display: inline;
 }
 
+.h2-events {
+    color: #ff1818;
+}
+
 /* ======== 6. Testimonial Section ====== */
 
 .testimonial {
-    background-color: #dedede;
+    background: linear-gradient(to right,#ae1a4c,#812669);
     width: 100%;
     text-align: center;
-    padding: 40px 0 40px;
+    padding: 20px 0 20px;
     margin: 80px 0 0 0;
 }
 
 .p-testimonial {
     width: 70%;
     text-align: right;
+    color: #f5f5f5;
+}
+
+.h2-testimonial {
+    color: #f5f5f5;
 }
 
 

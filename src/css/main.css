@@ -46,6 +46,11 @@ h3  {
 
 /* ======== 5. Event Section ====== */
 
+figure {
+    display: inline;
+    float: left;
+}
+
 .events {
     width: 80%;
     margin: 0 auto 0;
@@ -64,6 +69,7 @@ h3  {
 .events-images {
     margin: 90px 0 30px;
     text-align: center;
+    overflow: hidden;
 }
 
 .event-image {

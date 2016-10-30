@@ -215,7 +215,7 @@ footer {
 
 .contact-data {
     width: 220px;
-    border: dotted;
+    border: solid;
     padding: 15px;
     display: inline-block;
     margin: 25px auto;

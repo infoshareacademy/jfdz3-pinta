@@ -109,14 +109,18 @@ div.comming-soon {
 
 /* ======== 8. Team section - Kris ======== */
 
+
+
 .team-header {
     text-align: center;
 }
+
 
 .team-member {
     width: 250px;
     border: dotted;
     padding: 15px;
+    display: inline-block;
 }
 
 .team-member-header {

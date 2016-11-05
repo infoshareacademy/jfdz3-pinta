@@ -8,12 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">        <!-- Place favicon.ico in the root directory -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
         <link rel="stylesheet" href="css/normalize.css">
+
         <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Atma&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -27,44 +32,36 @@
             <p class="logo">Pinta</p>
 
             <nav>
-
-            <ul class="navigation-list">
-
-
+                     <ul class="navigation-list">
 
                 <div class="options">
-
-                     <li><a href="#">Strona Główna</a></li>
-                     <li><a href="#">Wydarzenia</a></li>
-                     <li><a href="#">Kontakt</a></li>
+                     <li class="options"><a href="#">Strona Główna</a></li>
+                     <li class="options"><a href="#events">Wydarzenia</a></li>
+                     <li class="options"><a href="#contact">Kontakt</a></li>
 
                 </div>
 
-                 <div class="input">
+                <div class="input">
                      <input title="search input" type="text" id="search-input"/>
-                     <input class="search-button" type="button" id="search-button" value="SZUKAJ" />
+                      <button style="font-size:24px"><i class="material-icons">search</i></button>
 
-                 </div>
+                </div>
 
-
-
-
-
-
-
-                <div class="clear:both;"></div>
-            </ul>
-
-
+                    </ul>
             </nav>
-
           </header>
 
-        <div class="container">
-            <section class="top-header">
-                <h1>Najlepsze wydarzenia w Trójmieście</h1>
-                <img src="WebstormProjects/jfdz3-pinta/src/img/party.jpg" style="display:block;margin:auto;">
-            </section>
+                <div class="container">
+                     <section class="top-header">
+                         <h1>Najlepsze wydarzenia w Trójmieście</h1>
+                         <img src="https://picjumbo.imgix.net/HNCK8891-1.jpg?q=40&w=1650&sharp=30" alt="party">
+                         <a href="#events">
+                             <i class="material-icons" style="font-size:40px;position:absolute;left:650px;">expand_more</i>
+                         </a>
+
+
+                     </section>
+                </div>
 
             <!-- Enea -->
             <section class="how-it-works">
@@ -77,6 +74,7 @@
 
             <!-- Marcin -->
             <section class="events">
+                <h2 id="events"></h2>
                 <h2>Sprawdź najbliższe wydarzenia w Trójmieście!</h2>
                 <p class="events-p">Zobacz co dzieje się w okolicy i dołącz do wydarzenia lub wyszukaj spośród
                     kilkuset dostępnych eventów za pomocą naszej aplikacji!</p>
@@ -195,10 +193,11 @@
         </div>
 
         <footer>
+            <h2 id="contact"</h2>
             <div class="contact-phone">
                 +48 555 555 555
             </div>
-
+            <h2 id="contact"</h2>
             <div class="contact-address">
                 Al. Grunwaldzka 472 <br />
                 80-309 Gdańsk <br />

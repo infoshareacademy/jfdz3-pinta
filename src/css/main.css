@@ -23,69 +23,120 @@ body {
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-
 }
 
 h1  {
     font-size: 3em;
     letter-spacing: 4px;
-
 }
 
 h2  {
     font-size: 2em;
     letter-spacing: 3px;
-
 }
 
 h3  {
     font-size: 1.5em;
     letter-spacing: 2px;
-
 }
-
 nav{
-
-    float:left;
     background-color: #b41558;
     min-width: 520px;
 }
+
 .logo {
-
+    color: white;
     float:left;
-    padding: 20px;
-
-
+    font-family: 'Atma', sans-serif;
+    font-size: 45px;
+    padding-left: 30px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    padding-top: 20px;
 }
 
 .options {
-
     float:left;
-    padding: 20px;
-}
-
-.input{
-
-    float:left;
-    padding: 20px;
-}
-
-li  {
-
-    display: inline-block;
-
-}
-
-li a{
-
-    text-decoration: none;
+    padding: 20px 20px 0 20px;
+    font-family: 'Atma', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
     color: black;
 }
 
-ul{
+.input {
+    float: right;
+    padding: 45px 40px 50px 40px;
+}
+
+#search-input{
+    float: left;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #005580;
+    width: 200px;
+    height: 24px;
+
+}
+
+.input button{
+     border: none;
+     float: right;
+     border-radius: 5px;
+     background-color: #005580;
+     font-family: 'Atma', sans-serif;
+     font-size: 14px;
+     width: 40px;
+     height: 29px;
+     color: white;
+}
+
+li  {
+    display: inline-block;
+}
+
+li a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 0 30px 0 30px;
+}
+
+li a:hover{
+    background-color: #005580;
+    color: white;
+}
+
+
+.navigation-list {
 
     text-underline: none;
+    overflow: hidden;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
+
+.top-header{
+    background-color: #dedede;
+    padding: 0 30px 40px; 20px;
+}
+
+.top-header h1{
+    text-align: center;
+    -webkit-margin-before: 0;
+    padding-top: 40px;
+}
+
+.top-header img{
+
+    border-radius: 95px;
+    display: block;
+    margin: auto;
+    width 700px;
+    height: 500px;
+}
+
+
 
 /* ======== 5. Event Section ====== */
 
@@ -138,9 +189,9 @@ div.comming-soon {
 }
 
 .button {
-    background-color: #005580;
+
+    background-color: #005580
     border: none;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -148,7 +199,9 @@ div.comming-soon {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    color: white;
 }
+
 
 /* ======== 8. Team section - Kris ======== */
 

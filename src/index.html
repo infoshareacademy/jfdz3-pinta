@@ -8,10 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato|Exo+2" rel="stylesheet">        <!-- Place favicon.ico in the root directory -->
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Amita&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://use.fontawesome.com/4da0cbc8ab.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -22,12 +25,38 @@
         <header>
             <nav>
 
+            <ul>
+
+                <div class="logo"><p style="font-family: 'Amita', sans-serif;">Pinta</p></div>
+
+                <div class="options">
+
+                     <li><a href="#">Strona Główna</a></li>
+                     <li><a href="#">Wydarzenia</a></li>
+                     <li><a href="#">Kontakt</a></li>
+
+                </div>
+
+                <div class="input">
+                     <input title="search input" type="text" id="search-input"/>
+                </div>
+
+               <div class="input">
+               <input type="button" id="search-button" value="Szukaj" />
+               </div>
+
+                <div class="clear:both;"></div>
+            </ul>
+
+
             </nav>
         </header>
 
 
         <div class="container">
             <section class="top-header">
+                <h1>Najlepsze wydarzenia w Trójmieście</h1>
+                <img src="party.jpg" style="display:block;margin:auto;">
             </section>
 
             <!-- Enea -->
@@ -39,34 +68,31 @@
 
             </section>
 
-            <!-- Marcin -->
-            <section class="events">
-                <h2 class="h2-events">Sprawdź najbliższe wydarzenia w Trójmieście!</h2>
-                <p class="events-p">Zobacz co dzieje się w okolicy i dołącz do wydarzenia lub wyszukaj spośród
-                    kilkuset dostępnych eventów za pomocą naszej aplikacji!</p>
-                <div class="events-images">
-                    <figure>
-                        <img class="img-circle" src="https://images.unsplash.com/photo-1472226717144-d38d91fc0d6c?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb" alt="event" height="200" width="200">
-                        <figcaption>28.10.2016</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img-circle" src="https://images.unsplash.com/photo-1463415268136-e52a5af54519?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb" alt="event" height="200" width="200">
-                        <figcaption>28.10.2016</figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img-circle" src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrg" alt="event" height="200" width="200">
-                        <figcaption>28.10.2016</figcaption>
-                    </figure>
-                </div>
-            </section>
+    <!-- Marcin -->
+    <section class="events">
+        <h2 class="h2-events">Sprawdź najbliższe wydarzenia w Trójmieście!</h2>
+        <p class="events-p">Zobacz co dzieje się w okolicy i dołącz do wydarzenia lub wyszukaj spośród
+            kilkuset dostępnych eventów za pomocą naszej aplikacji!</p>
+        <div class="events-images">
+            <div class="event-image">
+                <img class="img-circle" src="https://images.unsplash.com/photo-1472226717144-d38d91fc0d6c?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb" alt="event" height="200" width="200">
+            </div>
+            <div class="event-image">
+                <img class="img-circle" src="https://images.unsplash.com/photo-1463415268136-e52a5af54519?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb" alt="event" height="200" width="200">
+            </div>
+            <div class="event-image">
+                <img class="img-circle" src="https://images.unsplash.com/photo-1464375117522-1311d6a5b81f?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrg" alt="event" height="200" width="200">
+            </div>
+        </div>
+    </section>
 
-            <section class="testimonial">
-                <h2 class="h2-testimonial">
-                    &quot;Najlepsza aplikacja dostępna na rynku!<br>
-                    ​​​​​​​Uwielbiam z niej korzystać!&quot;
-                </h2>
-                <p class="p-testimonial">- Dziennikarz TVN</p>
-            </section>
+    <section class="testimonial">
+        <h2 class="h2-testimonial">
+            &quot;Najlepsza aplikacja dostępna na rynku!<br>
+            ​​​​​​​Uwielbiam z niej korzystać!&quot;
+        </h2>
+        <p class="p-testimonial">- Dziennikarz TVN</p>
+    </section>
 
             <!-- Kris -->
             <section class="sign-up">
@@ -81,80 +107,82 @@
 
             <section class="team">
                 <div class="team-header">
-                    <h2>Nasz zespół</h2>
+                    <h1 id="our-team">Nasz zespół</h1>
                 </div>
 
-                <div class="team-member">
+                    <div class="team-member-center">
+                        <div class="team-member">
 
-                    <div class="team-member-header">
-                        Piotr Belling
+                            <div class="team-member-header">
+                                Piotr Belling
+                            </div>
+
+                            <div class="team-member-photo">
+                                <img src="img/pbelling.jpg" width="150px" height="150px">
+                            </div>
+
+                            <div class="team-member-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+
+                        </div>
+
+                        <div class="team-member">
+
+                            <div class="team-member-header">
+                                Marcin Szychowski
+                            </div>
+
+                            <div class="team-member-photo">
+                                <img src="img/mszychowski.jpg" width="150px" height="150px">
+                            </div>
+
+                            <div class="team-member-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+
+                        </div>
+
+                        <div class="team-member">
+
+                            <div class="team-member-header">
+                                Krzysztof Garski
+                            </div>
+
+                            <div class="team-member-photo">
+                                <img src="img/kgarski.jpg" width="150px" height="150px">
+                            </div>
+
+                            <div class="team-member-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+
+                        </div>
+
+                        <div class="team-member">
+
+                            <div class="team-member-header">
+                                Enea Jorgji
+                            </div>
+
+                            <div class="team-member-photo">
+                                <img src="img/ejorgji.jpg" width="150px" height="150px">
+                            </div>
+
+                            <div class="team-member-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+
+                        </div>
                     </div>
-
-                    <div class="team-member-photo">
-                        <img src="img/sdsds.jpg" width="150px" height="150px">
-                    </div>
-
-                    <div class="team-member-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-
-                </div>
-
-                <div class="team-member">
-
-                    <div class="team-member-header">
-                        Marcin Szychowski
-                    </div>
-
-                    <div class="team-member-photo">
-                        <img src="img/sdsds.jpg" width="150px" height="150px">
-                    </div>
-
-                    <div class="team-member-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-
-                </div>
-
-                <div class="team-member">
-
-                    <div class="team-member-header">
-                        Krzysztof Garski
-                    </div>
-
-                    <div class="team-member-photo">
-                        <img src="img/sdsds.jpg" width="150px" height="150px">
-                    </div>
-
-                    <div class="team-member-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-
-                </div>
-
-                <div class="team-member">
-
-                    <div class="team-member-header">
-                        Enea Jorgji
-                    </div>
-
-                    <div class="team-member-photo">
-                        <img src="img/sdsds.jpg" width="150px" height="150px">
-                    </div>
-
-                    <div class="team-member-description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.
-                    </div>
-
-                </div>
 
             </section>
 
@@ -162,23 +190,43 @@
         </div>
 
         <footer>
-            <div class="contact-phone">
-                +48 555 555 555
-            </div>
 
-            <div class="contact-address">
-                Al. Grunwaldzka 472 <br />
-                80-309 Gdańsk <br />
-                Olivia Four <br />
-            </div>
 
-            <div class="contact-e-mail">
-                <a href="mailto:blala@blala" class="contact-e-mail-link">biuro@pinta.pl</a>
-            </div>
+            <div class="contact-center">
 
-            <div class="contact-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.4036833486048!2d18.569318615186138!3d54.40284710275142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752e8da704af%3A0xf20af31f12263209!2sOlivia+Gate%2C+aleja+Grunwaldzka+472%2C+80-309+Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1477827250393" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="contact-data">
+                    <p class="icon-height">
+                        <i class="fa fa-phone fa-fw fa-2x" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                        +48 555 555 555
+                    </p>
+                </div>
 
+                <div class="contact-data">
+                    <p class="icon-height">
+                        <i class="fa fa-home fa-fw fa-2x" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                        Al. Grunwaldzka 472 <br />
+                        80-309 Gdańsk <br />
+                        Olivia Four <br />
+                    </p>
+
+                </div>
+
+                <div class="contact-data">
+                    <p class="icon-height">
+                        <i class="fa fa-envelope-open-o fa-fw fa-2x" aria-hidden="true"></i>
+                    </p>
+                    <p>
+                        <a href="mailto:blala@blala" class="contact-e-mail-link">biuro@pinta.pl</a>
+                    </p>
+                </div>
+
+                 <div class="contact-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2322.4036833486048!2d18.569318615186138!3d54.40284710275142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd752e8da704af%3A0xf20af31f12263209!2sOlivia+Gate%2C+aleja+Grunwaldzka+472%2C+80-309+Gda%C5%84sk!5e0!3m2!1spl!2spl!4v1477827250393" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 </div>
             </div>
         </footer>
 

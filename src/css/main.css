@@ -13,103 +13,76 @@
     8. Team
     9. Footer
    ========================================================================== */
-
-/* ======== 1. GLobal Styles ======== */
-
+/*===== 1. Global Styles =====*/
 body {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 12pt;
-}
+  font: 1em "Exo 2", sans-serif; }
 
-h1, h2, h3 {
-    font-family: 'Exo 2', sans-serif;
+h1 {
+  font: 3em "Exo 2", sans-serif; }
 
-}
+h2 {
+  font: 2em "Exo 2", sans-serif; }
 
-h1  {
-    font-size: 3em;
-    letter-spacing: 4px;
+h3 {
+  font: 1.5em "Exo 2", sans-serif; }
 
-}
+a {
+  text-decoration: none; }
 
-h2  {
-    font-size: 2em;
-    letter-spacing: 3px;
+a:hover {
+  text-decoration: underline; }
 
-}
-
-h3  {
-    font-size: 1.5em;
-    letter-spacing: 2px;
-
-}
-
-/* ======== 5. Event Section ====== */
-
-figure {
-    display: inline;
-    float: left;
-}
-
+/*===== 5. Event Section =====*/
 .events {
-    width: 80%;
-    margin: 0 auto 0;
-    text-align: center;
-}
-
-.img-circle {
-    border-radius: 50%;
-}
+  width: 80%;
+  margin: 0 auto 0;
+  text-align: center; }
 
 .events-p {
-    width: 40%;
-    margin: 60px auto 0;
-}
+  width: 40%;
+  margin: 60px auto 0; }
 
 .events-images {
-    margin: 90px 0 30px;
-    text-align: center;
-    overflow: hidden;
-}
+  margin: 90px 0 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 .event-image {
-    margin: 0 70px 0 70px;
-    display: inline;
-}
+  margin: 0 70px 0 70px;
+  display: inline; }
+
+.img-circle {
+  border-radius: 50%; }
 
 .h2-events {
-    color: #ff1818;
-}
+  color: #ff1818; }
 
-/* ======== 6. Testimonial Section ====== */
-
+/*===== 6. Testimonial Section =====*/
 .testimonial {
-    background: linear-gradient(to right,#ae1a4c,#812669);
-    width: 100%;
-    text-align: center;
-    padding: 20px 0 20px;
-    margin: 80px 0 0 0;
-}
+  background: linear-gradient(to right, #ae1a4c, #812669);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 20px;
+  margin: 80px 0 0 0; }
 
 .p-testimonial {
-    width: 70%;
-    text-align: right;
-    color: #f5f5f5;
-}
+  width: 70%;
+  text-align: right;
+  color: #f5f5f5; }
 
 .h2-testimonial {
-    color: #f5f5f5;
-}
+  color: #f5f5f5; }
 
+/* ====== 7. Sign-up section - Kris ====== */
 
-/* ======== 7. Sign-up section - Kris ======== */
-
-div.comming-soon {
+/*# sourceMappingURL=main.css.map */
+.comming-soon {
     background: darkgray;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5em;
-    padding: 15px 30px 25px 30px;
+    padding: 45px 30px 25px 30px;
     color: #ffffff;
 }
 
@@ -128,14 +101,31 @@ div.comming-soon {
 
 /* ======== 8. Team section - Kris ======== */
 
+.team {
+    margin-bottom: 50px;
+}
+
+#our-team {
+    text-transform: uppercase;
+}
+
 .team-header {
     text-align: center;
+    margin-top: 50px;
+}
+
+.team-member-center {
+    margin: 0 auto;
+    width: 1190px;
 }
 
 .team-member {
-    width: 250px;
+    width: 240px;
     border: dotted;
     padding: 15px;
+    display: inline-block;
+    margin: 25px auto;
+    margin-left: 10px;
 }
 
 .team-member-header {
@@ -160,24 +150,43 @@ div.comming-soon {
 /* ======== 9. Footer section - Kris ======== */
 
 footer {
-    padding: 30 px;
-    background: black;
+    padding: 15px;
+    background: darkslategray;
     color: whitesmoke;
 
 }
 
-.contact-phone {
-
+p.icon-height {
+    vertical-align: top;
+    height: 50px;
 }
 
-.contact-address {
-    
+.contact-center {
+    margin: 0 auto;
+    width: 880px;
 }
 
-.contact-e-mail-link {
-    color: #ffffff;
+.contact-data {
+    width: 240px;
+    height:200px;
+    border: solid;
+    padding: 15px;
+    float: left;;
+    margin: 25px auto;
+    margin-left: 10px;
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: top;
 }
 
-.contact-e-mail {
+.contact-map {
+    margin: 25px auto;
+    text-align: center;
+    clear: both;
+    width: 450px;
+    height: 450px;
+    border: solid;
+    padding: 15px;
+
 
 }

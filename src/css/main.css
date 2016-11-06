@@ -128,12 +128,12 @@ ul{
 
 /* ======== 7. Sign-up section - Kris ======== */
 
-div.comming-soon {
+.comming-soon {
     background: darkgray;
     text-align: center;
     text-transform: uppercase;
     font-size: 2.5em;
-    padding: 15px 30px 25px 30px;
+    padding: 45px 30px 25px 30px;
     color: #ffffff;
 }
 
@@ -201,29 +201,47 @@ div.comming-soon {
 /* ======== 9. Footer section - Kris ======== */
 
 footer {
-    padding: 30 px;
+    padding: 15px;
     background: darkslategray;
     color: whitesmoke;
 
 
 }
 
+p.icon-height {
+    vertical-align: top;
+    height: 50px;
+}
+
 .contact-center {
     margin: 0 auto;
-    width: 820px;
+    width: 880px;
 }
 
 .contact-data {
-    width: 220px;
+    width: 240px;
+    height:200px;
     border: solid;
     padding: 15px;
-    display: inline-block;
+    float: left;;
     margin: 25px auto;
     margin-left: 10px;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: top;
 }
 
 .contact-map {
     margin: 25px auto;
-    margin-left: 10px;
+    text-align: center;
+    clear: both;
+
+
+    width: 450px;
+    height: 450px;
+    border: solid;
+    padding: 15px;
+    float: left;
+
+
 }

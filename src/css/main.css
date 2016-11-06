@@ -1,4 +1,3 @@
-
 /* ==========================================================================
    INDEX:
 
@@ -13,121 +12,70 @@
     8. Team
     9. Footer
    ========================================================================== */
-
-/* ======== 1. GLobal Styles ======== */
-
+/*===== 1. Global Styles =====*/
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 12pt;
-}
+  font: 1em "Exo 2", sans-serif; }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+h1 {
+  font: 3em "Exo 2", sans-serif; }
 
-}
+h2 {
+  font: 2em "Exo 2", sans-serif; }
 
-h1  {
-    font-size: 3em;
-    letter-spacing: 4px;
+h3 {
+  font: 1.5em "Exo 2", sans-serif; }
 
-}
+a {
+  text-decoration: none; }
 
-h2  {
-    font-size: 2em;
-    letter-spacing: 3px;
+a:hover {
+  text-decoration: underline; }
 
-}
-
-h3  {
-    font-size: 1.5em;
-    letter-spacing: 2px;
-
-}
-
-nav{
-
-    float:left;
-    background-color: #b41558;
-    min-width: 520px;
-}
-.logo {
-
-    float:left;
-    padding: 20px;
-
-
-}
-
-.options {
-
-    float:left;
-    padding: 20px;
-}
-
-.input{
-
-    float:left;
-    padding: 20px;
-}
-
-li  {
-
-    display: inline-block;
-
-}
-
-li a{
-
-    text-decoration: none;
-    color: black;
-}
-
-ul{
-
-    text-underline: none;
-}
-
-/* ======== 5. Event Section ====== */
-
+/*===== 5. Event Section =====*/
 .events {
-    width: 80%;
-    margin: 0 auto 0;
-    text-align: center;
-}
+  width: 80%;
+  margin: 0 auto 0;
+  text-align: center; }
 
 .events-p {
-    width: 40%;
-    margin: 60px auto 0;
-}
+  width: 40%;
+  margin: 60px auto 0; }
 
 .events-images {
-    margin: 90px 0 30px;
-    text-align: center;
-}
+  margin: 90px 0 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 .event-image {
-    margin: 0 70px 0 70px;
-    display: inline;
-}
+  margin: 0 70px 0 70px;
+  display: inline; }
 
-/* ======== 6. Testimonial Section ====== */
+.img-circle {
+  border-radius: 50%; }
 
+.h2-events {
+  color: #ff1818; }
+
+/*===== 6. Testimonial Section =====*/
 .testimonial {
-    background-color: #dedede;
-    width: 100%;
-    text-align: center;
-    padding: 40px 0 40px;
-    margin: 80px 0 0 0;
-}
+  background: linear-gradient(to right, #ae1a4c, #812669);
+  width: 100%;
+  text-align: center;
+  padding: 20px 0 20px;
+  margin: 80px 0 0 0; }
 
 .p-testimonial {
-    width: 70%;
-    text-align: right;
-}
+  width: 70%;
+  text-align: right;
+  color: #f5f5f5; }
 
+.h2-testimonial {
+  color: #f5f5f5; }
 
-/* ======== 7. Sign-up section - Kris ======== */
+/* ====== 7. Sign-up section - Kris ====== */
 
+/*# sourceMappingURL=main.css.map */
 .comming-soon {
     background: darkgray;
     text-align: center;

@@ -204,8 +204,6 @@ footer {
     padding: 15px;
     background: darkslategray;
     color: whitesmoke;
-
-
 }
 
 p.icon-height {
@@ -235,13 +233,10 @@ p.icon-height {
     margin: 25px auto;
     text-align: center;
     clear: both;
-
-
     width: 450px;
     height: 450px;
     border: solid;
     padding: 15px;
-    float: left;
 
 
 }

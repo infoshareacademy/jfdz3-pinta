@@ -159,7 +159,7 @@ li a:hover{
 
 /*=adivces-1=*/
 .first-table-how-it-works   {
-    max-width: 700px;
+    max-width: 2500px;
     width:100%;
     display: inline-block;
     text-align: center;
@@ -172,13 +172,13 @@ li a:hover{
     text-align: center;
 }
 .choose-criteria    {
-    max-width:340px;
+    max-width:500px;
     width: 100%;
     float: left;
     text-align: center;
 }
 .comp-icon-top-right {
-    max-width: 340px;
+    max-width: 500px;
     width: 100%;
     float: right;
     text-align: center;
@@ -187,7 +187,7 @@ li a:hover{
 
 /*=adivces-2=*/
 .choose-date {
-    max-width: 700px;
+    max-width: 2500px;
     width:100%;
     display: inline-block;
     text-align: center;
@@ -200,17 +200,17 @@ li a:hover{
     text-align: center;
 }
 .comp-middle-left    {
-    max-width:340px;
+    max-width:500px;
     width: 100%;
     float: left;
     text-align: center;
 }
 .header-choose-date {
-    max-width: 340px;
+    max-width: 500px;
     width: 100%;
     float: right;
     text-align: center;
-    top-magin: 0;
+    top-magin: 30px;
 }
 
 

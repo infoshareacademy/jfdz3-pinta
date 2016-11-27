@@ -186,7 +186,7 @@ a {
 h1  {
     color: #fff;
     text-align: center;
-    padding-top: 20%;
+    padding-top: 15%;
     margin: 0;
 }
 
@@ -253,6 +253,25 @@ li a:hover{
     padding-top: 40px;
 }
 
+
+
+.button-try-header {
+
+    background-color: #2B74B9; /* blue */
+    border: none;
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 42%;
+    margin-top: 5%;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
 
 /*==========================================*/
 /*===========3.How it Works?-Enea===========*/

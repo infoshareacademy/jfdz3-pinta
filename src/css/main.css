@@ -159,7 +159,7 @@ li a:hover{
 
 /*=adivces-1=*/
 .first-table-how-it-works   {
-    max-width: 2500px;
+    max-width: 700px;
     width:100%;
     display: inline-block;
     text-align: center;
@@ -172,13 +172,14 @@ li a:hover{
     text-align: center;
 }
 .choose-criteria    {
-    max-width:500px;
+    margin-top: 60px;
+    max-width:340px;
     width: 100%;
     float: left;
     text-align: center;
 }
 .comp-icon-top-right {
-    max-width: 500px;
+    max-width: 340px;
     width: 100%;
     float: right;
     text-align: center;
@@ -187,12 +188,11 @@ li a:hover{
 
 /*=adivces-2=*/
 .choose-date {
-    max-width: 2500px;
+    max-width: 700px;
     width:100%;
     display: inline-block;
     text-align: center;
 }
-
 
 .flat-icon-2    {
     width:50%;
@@ -200,17 +200,17 @@ li a:hover{
     text-align: center;
 }
 .comp-middle-left    {
-    max-width:500px;
+    max-width:340px;
     width: 100%;
     float: left;
     text-align: center;
 }
 .header-choose-date {
-    max-width: 500px;
+    margin-top: 60px;
+    max-width: 340px;
     width: 100%;
     float: right;
     text-align: center;
-    top-magin: 30px;
 }
 
 
@@ -222,18 +222,20 @@ li a:hover{
     text-align: center;
 }
 
-
 .flat-icon-3  {
     width:50%;
     top-margin: 0;
     text-align: center;
 }
+
 .header-text-choose-event   {
+    margin-top: 60px;
     max-width:340px;
     width: 100%;
     float: left;
     text-align: center;
 }
+
 .comp-bottom-right {
     max-width: 340px;
     width: 100%;

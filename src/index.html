@@ -12,7 +12,14 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato|Exo+2" rel="stylesheet">        <!-- Place favicon.ico in the root directory -->
         <link href='http://fonts.googleapis.com/css?family=Atma&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -27,34 +34,35 @@
 
         <!-- Piotr -->
 
+<div class="container.fluid">
+            <header>
+                <div>
+                    <p class="logo">Pinta</p>
+                </div>
 
-        <header>
-
-            <p class="logo">Pinta</p>
-
-            <nav>
-                <ul class="navigation-list">
-
+                <nav>
                     <div class="options">
-                        <li class="options"><a href="#">Strona Główna</a></li>
-                        <li class="options"><a href="#events">Wydarzenia</a></li>
-                        <li class="options"><a href="#contact">Kontakt</a></li>
-
+                        <ul class="navigation-list">
+                            <li class="options"><a href="#">Strona Główna</a></li>
+                            <li class="options"><a href="#events">Wydarzenia</a></li>
+                            <li class="options"><a href="#contact">Kontakt</a></li>
+                        </ul>
                     </div>
 
-                    <div class="input">
-                        <input title="search input" type="text" id="search-input"/>
-                        <button><i class="material-icons">search</i></button>
-
+                    <div class="input-group" class="col-lg-2">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn"><button class="btn btn-default" type="button">Go!</button>
+                               </span>
                     </div>
 
-                </ul>
-            </nav>
-        </header>
-
-        <div class="bg-img">
-            <h1>My zajmiemy się Twoją rozrywką. <br>Ty zajmij się resztą.</h1>
-        </div>
+                </nav>
+            </header>
+            <section>
+                <div class="bg-img">
+                    <h1>My zajmiemy się Twoją rozrywką. <br>Ty zajmij się resztą.</h1>
+                    <input type="button" class="button-try-header" value="STARTUJEMY">
+                </div>
+            </section>
             <!-- Enea -->
             <section class="how-it-works">
 

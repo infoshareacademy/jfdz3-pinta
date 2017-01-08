@@ -23,13 +23,15 @@
         var img = arrImages.splice(num, 1);
         console.log( img );
         $('ol').append(
-                '<li>' + '<img src="vendors/game_img/' + img[0] + '.jpg' + '">' + '</li>'
+                '<li class="' + img[0] + '">' + '<img src="vendors/game_img/' + img[0] + '.jpg' + '">' + '</li>'
         );
     }
 
-    $("img").click(function() {
-        var guess1 = $(this);
-        console.log('wypisz' + guess1);
+    $("li").click(function() {
+        $(this).children("img").addClass("img_selected");
+
+//        var guess1 = $(this).children("img");
+//        console.log('wypisz' + guess1);
     });
 
 

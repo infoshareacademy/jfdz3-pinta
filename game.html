@@ -3,8 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="vendors/lib/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="vendors/css/game.css">
 </head>
 <body>
+<div id="container">
 
+
+    <ol></ol>
+
+<script>
+
+
+    var arrImages = [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8];
+
+    for (var i = 0; i < 16; i++) {
+
+        var num = Math.ceil( Math.random() * arrImages.length ) - 1; //indeks obrazka
+        var img = arrImages.splice(num, 1);
+        console.log( img );
+        $('ol').append(
+                '<li>' + '<img src="vendors/game_img/' + img[0] + '.jpg' + '">' + '</li>'
+        );
+    }
+
+    $("img").click(function() {
+        var guess1 = $(this);
+        console.log('wypisz' + guess1);
+    });
+
+
+
+</script>
+
+
+</div>
 </body>
 </html>

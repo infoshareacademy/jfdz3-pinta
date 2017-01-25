@@ -1,0 +1,281 @@
+/*----------------*/
+/* GLOBAL STYLES  */
+/*----------------*/
+
+body {
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.section_margin_bottom {
+    margin-bottom: 20px;
+}
+
+.section_padding_bottom {
+    padding-bottom: 20px;
+}
+
+.section_margin_top {
+    margin-top: 20px;
+}
+
+.section_paddings {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.section_margin_bottom {
+    margin-bottom: 10px;
+}
+
+.h_padding {
+    padding: 20px;
+}
+
+/*-----------*/
+/*  NAV BAR  */
+/*-----------*/
+
+.logo {
+    width: 50%;
+    float: left;
+    margin: 10px 10px 10px 10px;
+}
+
+.navbar-default {
+    border-color: transparent;
+    background-color: #F3E5F5;
+
+}
+
+.nav-links a:link, a:visited {
+    padding: 15px;
+    margin-top: 18px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 130%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-links a:hover, a:active {
+    border-bottom: 2px solid #9C27B0;
+    /*#e67e22;*/
+}
+
+.navbar-default .navbar-nav > .active > a {
+    background-color: #2e6da4;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #000000;
+}
+
+.small a:link, a:visited {
+    padding: 10px 20px 9px 9px;
+    margin-top: 6px;
+}
+
+.small .logo {
+    width: 30%;
+    float: left;
+    margin: 8px 8px 8px 8px;
+}
+
+.small a:hover, a:active {
+    border-bottom: 1px solid #9C27B0;
+}
+
+/*#e67e22;*/
+
+/*----------*/
+/*  SLIDER  */
+/*----------*/
+
+.carousel-caption {
+    font-size: 300%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.post-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    opacity: 0.7;
+    top: 20%;
+    left: 40%;
+    vertical-align: 50%;
+    position: absolute;
+    padding: 20px;
+}
+
+.text_over_image {
+    opacity: 1;
+}
+
+.text-over-image-heading {
+    opacity: 1;
+}
+
+.text_over_image {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: ghostwhite;
+    background: darkorange;
+    text-align: center;
+    padding: 15px;
+    font-size: 3em;
+}
+
+div.slick div {
+    padding: 10px 40px 15px 0px;
+    width: 20%;
+}
+
+div.slick .img-thumbnail {
+    border: 0px;
+}
+
+/*-----------------*/
+/*  HOW IT WORKS   */
+/*  JAK TO DZIAŁA  */
+/*-----------------*/
+
+
+
+.how-works-image {
+    margin: 0 auto;
+}
+
+.how-works-under-image {
+    text-align: center;
+}
+
+/*----------------*/
+/* CALL TO ACTION */
+/*    WYPRÓBUJ    */
+/*----------------*/
+
+.call-to-action_background {
+    background-color: #9C27B0;
+    color: white;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+.call-to-action_memo {
+    margin-top: -10px;
+    padding-bottom: 15px;
+}
+
+/*----------------------*/
+/*  CHECK NEW EVENTS    */
+/*  SPRAWDZ WYDARZENIA  */
+/*----------------------*/
+
+.events-text {
+    margin-top: 15px;
+    text-transform: uppercase;
+    background-color: yellow;
+    padding: 2px;
+    font-weight: bold;
+    background-color: #FFEB3B;
+    margin: 15px auto 10px;
+    width: 70%;
+}
+
+/*----------------*/
+/*  TESTIMONIAL   */
+/*  DZIENNIKARKA  */
+/*----------------*/
+
+.testimonial-background {
+    background: url('../img/background-img.jpg') no-repeat fixed center;
+}
+
+.testimonial-text {
+    color: white;
+}
+
+.testimonial-img {
+    margin: 0 auto;
+    max-width: 80%;
+    border: 2px solid white;
+}
+
+.text-right {
+    font-size: 1.2em;
+}
+/*---------------*/
+/*  OUR TEAM     */
+/*  NASZ ZESPÓŁ  */
+/*---------------*/
+
+.team-member-text {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.caption h4 {
+    color: #fff;
+    font-size: 3em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*--------------*/
+/*  CONTACT US  */
+/*  KONTAKT     */
+/*--------------*/
+
+.background_contact {
+    background-color: rgb(124, 122, 124);
+    color: white;
+    padding-bottom: 5px;
+}
+
+.contact-us-icons {
+    height: 3.5em;
+}
+
+/*----------*/
+/*  FOOTER  */
+/*  STOPKA  */
+/*----------*/
+
+.background_footer {
+    background-color: rgb(124, 122, 124);
+    color: white;
+    padding-bottom: 30px;
+}
+
+/*.thumbnail {*/
+/*border: 0 none;*/
+/*box-shadow: none;*/
+/*margin:0;*/
+/*padding:0;*/
+/*}*/
+
+/*.thumbnail > img  {*/
+/*margin-left: 0px;*/
+/*}*/
+
+
+/*sandbox*/
+#toTop {
+    padding: 5px 3px;
+    background: #000;
+    /*color: #fff;*/
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    display: none;
+    width: 50px;
+    height: 50px;
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Pinta. Najlepsze wydarzenia w Trójmieście</title>
+    <link href="img/favicon-pinta.ico" rel="icon" type="image/x-icon"/>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -147,12 +148,43 @@
 
     <!--section: call to action-->
 
+
+
+
     <div class="row">
-        <div class="col-md-12 call-to-action_background">
+        <div class="col-md-12 call-to-action_background section_margin_top">
             <h1 class="h_padding call-to-action_background">Wypróbuj i znajdź swoje wydarzenie w 30 sekund!</h1>
-            <h3 class="call-to-action_memo">Zagraj z nami w MEMO i wygraj 2 bilety na koncert</h3>
-            <div class="text-center">
-                <button type="button" class="btn btn-default btn-lg how-works-under-image" data-toggle="modal" data-target="#myModal">Kliknij, żeby zagrać</button>
+            <h4>Wpisz swój e-mail, by dołączyć do testerów portalu!</h4>
+
+            <div class="center-block">
+
+                <form>
+                    <div class="form-group row center-block">
+                        <div class="col-md-12">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="E-mail">
+                        </div>
+
+                        <div class="form-group row center-block">
+                            <div class="col-md-12 center-block">
+                                <button type="submit" class="btn btn-default center-block">Sign in</button>
+                            </div>
+                        </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 call-to-action_background call-to-action_memo">
+
+            <div>
+                <h3>Zagraj z nami w MEMO i wygraj 2 bilety na koncert</h3>
+                <div class="text-center">
+                    <button type="button" class="btn btn-default btn-lg how-works-under-image" data-toggle="modal"
+                            data-target="#myModal">Kliknij, żeby zagrać
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -163,7 +195,8 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Tu będzie MEMO</h4>
                 </div>
                 <div class="modal-body">
@@ -186,25 +219,22 @@
 
 
     <div class="row section_margin_top section_padding_bottom">
-    <div class="col-md-4">
-    <img src="img/circle-concert.jpg" class="img-responsive img-circle how-works-image" width=50%">
-    <p class="text-center events-text"><strong>Czwartek: Koncert Nasty Bits</strong></p>
+        <div class="col-md-4">
+            <img src="img/circle-concert.jpg" class="img-responsive img-circle how-works-image" width=50%">
+            <p class="text-center events-text"><strong>Czwartek: Koncert Nasty Bits</strong></p>
+        </div>
+
+        <div class="col-md-4">
+            <img src="img/circle-theater.jpg" class="img-responsive img-circle how-works-image" width="50%">
+            <p class="text-center events-text"><strong><span>Sobota: Premiera w teatrze</span></strong></p>
+        </div>
+
+        <div class="col-md-4">
+            <img src="img/circle-guitar.jpg" class="img-responsive img-circle how-works-image" width="50%">
+            <p class="text-center events-text"><strong>Sobota: Koncert New Progs</strong></p>
+        </div>
+
     </div>
-
-    <div class="col-md-4">
-    <img src="img/circle-theater.jpg" class="img-responsive img-circle how-works-image" width="50%">
-    <p class="text-center events-text"><strong><span>Sobota: Premiera w teatrze</span></strong></p>
-    </div>
-
-    <div class="col-md-4">
-    <img src="img/circle-guitar.jpg" class="img-responsive img-circle how-works-image" width="50%">
-    <p class="text-center events-text"><strong>Sobota: Koncert New Progs</strong></p>
-    </div>
-
-    </div>
-
-
-
 
 
     <!--section: testimonial-->
@@ -216,8 +246,9 @@
             <img src="img/testimonial-photo.jpg" class="img-responsive img-circle center-block testimonial-img">
         </div>
         <div class="col-md-8">
-            <h2 class="h_padding testimonial-text">Nigdy wcześniej nie spotkałam portalu, który zawierałby tyle informacji o wydarzeniach w
-                Trójmieście. Będę go polecać swoim czytelnikom</h2>
+            <h2 class="h_padding testimonial-text">Nigdy wcześniej nie spotkałam portalu, który zawierałby tyle
+                informacji o wydarzeniach w
+                Trójmieście. Będę go polecać swoim widzom.</h2>
             <p class="text-right testimonial-text">- Joanna Kowalska, dziennikarka XYZ TV</p>
         </div>
         <div class="col-md-2">
@@ -298,17 +329,17 @@
     </div>
 
     <!--<div class="row background_contact">-->
-        <!--<div class="col-md-4 section_margin_bottom how-works-under-image">-->
-            <!--<i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>-->
-        <!--</div>-->
+    <!--<div class="col-md-4 section_margin_bottom how-works-under-image">-->
+    <!--<i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>-->
+    <!--</div>-->
 
-        <!--<div class="col-md-4 how-works-under-image">-->
-            <!--<i class="fa fa-mobile fa-3x" aria-hidden="true"></i>-->
-        <!--</div>-->
+    <!--<div class="col-md-4 how-works-under-image">-->
+    <!--<i class="fa fa-mobile fa-3x" aria-hidden="true"></i>-->
+    <!--</div>-->
 
-        <!--<div class="col-md-4 how-works-under-image">-->
-            <!--<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>-->
-        <!--</div>-->
+    <!--<div class="col-md-4 how-works-under-image">-->
+    <!--<i class="fa fa-envelope fa-2x" aria-hidden="true"></i>-->
+    <!--</div>-->
     <!--</div>-->
 
 
@@ -316,7 +347,7 @@
 
         <div class="col-md-4 section_margin_bottom how-works-under-image">
             <div class="contact-us-icons">
-            <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
             </div>
             <address>
                 Al. Grunwaldzka 472a<br>
@@ -326,7 +357,7 @@
 
         <div class="col-md-4 how-works-under-image">
             <div class="contact-us-icons">
-            <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
+                <i class="fa fa-mobile fa-3x" aria-hidden="true"></i>
             </div>
             <address>
                 +48 58 555 555 555 <br>
@@ -336,7 +367,7 @@
 
         <div class="col-md-4 how-works-under-image">
             <div class="contact-us-icons">
-            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
             </div>
             <address>
                 pinta@pinta.pi <br>
@@ -362,8 +393,8 @@
             <div class="text-right"><p><a href="...">Polityka prywatności</a></p></div>
 
             <!--div for scrolling to the top of page-->
-            <div id="toTop"><img src="img/icon-totop.png"></div>
-
+            <div id="toTop"><i class="fa fa-arrow-circle-up fa-3x" aria-hidden="true"></i>
+            </div>
 
 
         </div>

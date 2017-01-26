@@ -92,8 +92,6 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid #9C27B0;
 }
 
-/*#e67e22;*/
-
 /*----------*/
 /*  SLIDER  */
 /*----------*/
@@ -165,13 +163,17 @@ div.slick .img-thumbnail {
 .call-to-action_background {
     background-color: #9C27B0;
     color: white;
-    padding-bottom: 30px;
-    margin-top: 20px;
+    /*padding-bottom: 30px;*/
+    /*margin-top: 20px;*/
+}
+
+.call-to-action_newsletter {
+    width: 35%;
 }
 
 .call-to-action_memo {
-    margin-top: -10px;
     padding-bottom: 15px;
+    margin-top: 0px;
 }
 
 /*----------------------*/
@@ -255,27 +257,17 @@ div.slick .img-thumbnail {
     padding-bottom: 30px;
 }
 
-/*.thumbnail {*/
-/*border: 0 none;*/
-/*box-shadow: none;*/
-/*margin:0;*/
-/*padding:0;*/
-/*}*/
-
-/*.thumbnail > img  {*/
-/*margin-left: 0px;*/
-/*}*/
-
-
-/*sandbox*/
 #toTop {
-    padding: 5px 3px;
-    background: #000;
-    /*color: #fff;*/
+    padding: 5px 5px;
+    background: yellow;
     position: fixed;
-    bottom: 0;
-    right: 5px;
+    bottom: 20px;
+    right: 20px;
     display: none;
     width: 50px;
     height: 50px;
 }
+
+
+/*sandbox*/
+

@@ -1,24 +1,30 @@
 
-$(document).on('scroll', function() {
+// minimize navbar on scroll after 200px
 
+$(document).on('scroll', function() {
     if($(document).scrollTop()>200) {
         $('nav').removeClass('large').addClass('small');
     } else {
         $('nav').removeClass('small').addClass('large');
     }
-
 });
+
+// smooth scroll from navbar to anchor
 
 $(document).on('click', 'a', function(event){
     event.preventDefault();
-    $('body').animate({
+    $('html, body').animate({
         scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 1000);
 });
 
+// scroll to the top
 
-
-// to top
+$('#toTop').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+});
 
 $(window).scroll(function() {
     if ($(this).scrollTop()) {
@@ -26,9 +32,4 @@ $(window).scroll(function() {
     } else {
         $('#toTop').fadeOut();
     }
-});
-
-
-$("#toTop").click(function () {
-    $("html, body").animate({scrollTop: 0}, 1000);
 });

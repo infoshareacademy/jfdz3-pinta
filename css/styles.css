@@ -167,6 +167,11 @@ div.slick .img-thumbnail {
     /*margin-top: 20px;*/
 }
 
+.call-to-action_padding {
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
 .call-to-action_newsletter {
     width: 35%;
 }

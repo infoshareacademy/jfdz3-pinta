@@ -1,5 +1,23 @@
-#container {
-    width: 800px;
+#game_wrap {
+
+}
+
+#game_container {
+    float:left;
+    max-width:50%;
+    overflow:hidden;
+}
+
+#game_sidebar {
+    float:left;
+    width:50%;
+    overflow:hidden;
+    display: inline;
+
+}
+
+#defaultCountdown {
+    width: 100px;
 }
 
 ul { padding: 0;  margin: 0;}

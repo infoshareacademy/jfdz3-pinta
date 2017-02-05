@@ -1,20 +1,20 @@
 #game_wrap {
-
-}
-
-#game_container {
-    float:left;
-    max-width:50%;
-    overflow:hidden;
+    width:90%;
+    padding: 20px;
 }
 
 #game_sidebar {
-    float:left;
     width:50%;
-    overflow:hidden;
-    display: inline;
-
+    margin: 0 auto;
+float: right;
 }
+
+#game_container {
+    width:50%;
+    margin: 0 auto;
+float:left;
+}
+
 
 #defaultCountdown {
     width: 100px;
@@ -22,15 +22,13 @@
 
 ul { padding: 0;  margin: 0;}
 li {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     padding: 0;
     margin: 10px;
     float: left;
     list-style: none;
     outline: solid;
-
-
 }
 
 img {
@@ -46,3 +44,7 @@ img {
 .matched {
     opacity: 1;
 }
+
+/*.modal-footer {*/
+    /*float: left;*/
+/*}*/

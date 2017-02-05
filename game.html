@@ -5,17 +5,32 @@
     <title>Title</title>
     <!--<script src="vendors/lib/jquery-3.1.1.min.js"></script>-->
     <script src="bootstrap/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
     <script type="text/javascript" src="js/jquery.plugin.js"></script>
     <script type="text/javascript" src="js/jquery.countdown.js"></script>
     <script type="text/javascript" src="js/jquery.countdown-pl.js"></script>
-    <link rel="stylesheet" href="css/game.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
+    <link rel="stylesheet" href="css/game.css">
 
 
 </head>
 <body>
 
+
 <div id="game_wrap">
+
+    <div id="game_sidebar">
+        <div>MEM-O-MEM</div>
+        <div>Zagraj w MEMO i wygraj 2 bilety do kina</div>
+        <div>CZAS START</div>
+
+        <br><br>
+        Zostało Ci...<br><br>
+        <div id="significantShort2"></div>
+
+    </div>
 
     <div id="game_container">
 
@@ -72,31 +87,25 @@
 
             });
         </script>
-
-
     </div>
 
-    <div id="game_sidebar">
-<div id="defaultCountdown"></div><br><br>
-        Zostało Ci...<br><br>
-        <div id="significantShort2"></div>
+    <script>
 
-        <script>
+        //            var newYear = new Date();
+        //            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
+        //            $('#defaultCountdown').countdown({until: newYear});
+        //
+        //            $('#removeCountdown').click(function() {
+        //                var destroy = $(this).text() === 'Remove';
+        //                $(this).text(destroy ? 'Re-attach' : 'Remove');
+        //                $('#defaultCountdown').countdown(destroy ? 'destroy' : {until: newYear});
+        //            });
 
-//            var newYear = new Date();
-//            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
-//            $('#defaultCountdown').countdown({until: newYear});
-//
-//            $('#removeCountdown').click(function() {
-//                var destroy = $(this).text() === 'Remove';
-//                $(this).text(destroy ? 'Re-attach' : 'Remove');
-//                $('#defaultCountdown').countdown(destroy ? 'destroy' : {until: newYear});
-//            });
+        $('#significantShort2').countdown({until: '+0h +0m +150s', format: 'YOWDHMS', significant: 2});
 
-            $('#significantShort2').countdown({until: '+0h +0m +150s', format: 'YOWDHMS', significant: 2});
-
-        </script>
-    </div>
+    </script>
 </div>
+</div>
+
 </body>
 </html>

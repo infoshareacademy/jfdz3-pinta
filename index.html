@@ -38,10 +38,12 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <!--<li class="active"><a href="#">Strona główna <span class="sr-only">(current)</span></a></li>-->
-                        <li class="nav-links"><a href="#how-it-works" class="nav-links">Jak to działa</a></li>
-                        <li class="nav-links"><a href="#check-events">Sprawdź wydarzenia</a></li>
-                        <li class="nav-links"><a href="#team">Zespół</a></li>
-                        <li class="nav-links"><a href="#contact-us">Kontakt</a></li>
+                        <li class="nav-links"><a href="#how-it-works" data-siteTitle="Jak to działa?">Jak to działa</a></li>
+                        <li class="nav-links"><a href="#try" data-siteTitle="Wyspróbuj">Wyspróbuj</a></li>
+                        <li class="nav-links"><a href="#check-events" data-siteTitle="Sprawdź wydarzenia">Sprawdź wydarzenia</a></li>
+                        <li class="nav-links"><a href="#testimonials" data-siteTitle="Opinie">Opinie</a></li>
+                        <li class="nav-links"><a href="#team" data-siteTitle="Zespół">Zespół</a></li>
+                        <li class="nav-links"><a href="#contact-us" data-siteTitle="Kontakt">Kontakt</a></li>
                     </ul>
                     <form class="navbar-form navbar-left">
 
@@ -82,24 +84,23 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="img/slider-concert.jpg" alt="...">
+                        <img src="img/slider-concert.jpg" alt="pic-1">
                         <div class="carousel-caption">
                             Najlepsze koncerty
                         </div>
                     </div>
                     <div class="item">
-                        <img src="img/slider-cinema.jpg" alt="...">
+                        <img src="img/slider-cinema.jpg" alt="pic-2">
                         <div class="carousel-caption">
                             Nowości kinowe w Trójmieście
                         </div>
                     </div>
                     <div class="item">
-                        <img src="img/slider-event.jpg" alt="...">
+                        <img src="img/slider-event.jpg" alt="pic-3">
                         <div class="carousel-caption">
                             Najważniejsze wydarzenia
                         </div>
                     </div>
-                    ...
                 </div>
 
                 <!-- Controls -->
@@ -120,10 +121,10 @@
 
     <!--section: how it works-->
 
-    <div class="row">
+    <div class="row" id="how-it-works">
         <div class="col-md-12 section_margin_top">
             <p>
-            <h1 id="how-it-works">JAK TO DZIAŁA?</h1>
+            <h1>JAK TO DZIAŁA?</h1>
             </p>
         </div>
     </div>
@@ -173,7 +174,8 @@
     <!--</div>-->
     <!--</div>-->
 
-    <div class="row call-to-action_background">
+    <!-- Try-->
+    <div class="row call-to-action_background" id="try">
         <div class="col-md-12">
             <div>
                 <h1 class="call-to-action_padding call-to-action_background">Wypróbuj i znajdź swoje wydarzenie w 30 sekund!</h1>
@@ -261,10 +263,9 @@
 
     <!--section: testimonial-->
 
-    <div class="row testimonial-background">
+    <div class="row testimonial-background" id="testimonials">
         <!--<div class="row background_try">-->
-
-        <div class="col-md-2 text-center section_margin_top section_padding_bottom">
+        <div class="col-md-4 text-center section_margin_top section_padding_bottom">
             <img src="img/testimonial-photo.jpg" class="img-responsive img-circle center-block testimonial-img">
         </div>
         <div class="col-md-8">
@@ -272,10 +273,10 @@
                 informacji o wydarzeniach w
                 Trójmieście. Będę go polecać swoim widzom.</h2>
             <p class="text-right testimonial-text">- Joanna Kowalska, dziennikarka XYZ TV</p>
-        </div>
-        <div class="col-md-2">
+
         </div>
     </div>
+
 
     <!--section: our team-->
 
@@ -443,7 +444,6 @@
 <script src="js/script.js"></script>
 
 <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-
 
 </body>
 </html>

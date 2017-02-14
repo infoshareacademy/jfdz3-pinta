@@ -15,6 +15,8 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css">
     <link rel="stylesheet" href="css/game.css">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <script src="https://use.fontawesome.com/4da0cbc8ab.js"></script>
+
 
 
 </head>
@@ -28,18 +30,38 @@
 
         <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-6" id="memo-title">MEM-O MEMO</div>
+        <div class="col-md-6" id="memo-title">
+          MEM-O MEMO
         <div class="col-md-2"></div>
     </div>
 
 
         <div class="row">
             <div class="col-md-4">
+                <div class="memo-rules-emptytop"></div>
+                <div class="memo-rules-title">
+                    Zagraj w MEM-o MEMO
+                </div>
+                <div class="memo-rules-undertitle">
+                 z bohaterami popularnych memów
+                </div>
+                <div class="memo-rules-emptytop"></div>
+                <div class="memo-rules-win">
+                    Wygraj bilety do kina dla 2 osób
+                </div>
+                <div class="memo-rules-ticket">
+                    <div id="memo-ticket-icon"><i class="fa fa-ticket fa-4x" aria-hidden="true "></i></div>
+
+                </div>
+
+                <div class="memo-rules-btn">
+                    Naciśnij przycisk
+                </div>
                 <div class="timer" data-seconds-left=15></div>
-                sdsds<br>
-                sdsds<br>
-                sdsds<br>
-                sdsds<br>
+                <div>
+                    </div>
+                <div class="memo-results"></div>
+
 
             </div>
             <div class="col-md-6">
@@ -108,17 +130,6 @@
 
     <script>
 
-        //            var newYear = new Date();
-        //            newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1);
-        //            $('#defaultCountdown').countdown({until: newYear});
-        //
-        //            $('#removeCountdown').click(function() {
-        //                var destroy = $(this).text() === 'Remove';
-        //                $(this).text(destroy ? 'Re-attach' : 'Remove');
-        //                $('#defaultCountdown').countdown(destroy ? 'destroy' : {until: newYear});
-        //            });
-
-//        $('#significantShort2').countdown({until: '+0h +0m +150s', format: 'YOWDHMS', significant: 2});
 
         $(function(){
             $('.timer').startTimer({

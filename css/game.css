@@ -76,9 +76,9 @@
 
 
 
-#defaultCountdown {
-    width: 100px;
-}
+/*#defaultCountdown {*/
+    /*width: 100px;*/
+/*}*/
 
 ul { padding: 0;  margin: 0;}
 li {
@@ -114,11 +114,15 @@ img {
     /*float: left;*/
 /*}*/
 
+
+/*MEMO GAME*/
+
 .timer, .timer-done, .timer-loop {
     font-size: 30px;
     color: black;
     font-weight: bold;
     padding: 10px;
+    display: inline-block;
 }
 
 .jst-hours {
@@ -135,4 +139,44 @@ img {
 }
 .jst-timeout {
     color: red;
+}
+
+.memo-rules-emptytop {
+    margin-top: 25px;
+
+}
+.memo-rules-title {
+    font-family: 'Bungee Shade';
+    font-size: 1.7em;
+    color: #9C27B0;
+
+
+}
+.memo-rules-undertitle {
+    font-family: Lato;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.memo-rules-win {
+    font-family: Lato;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #9C27B0;
+
+}
+.memo-results {
+
+}
+.memo-rules-ticket {
+    margin: 15px 0 15px 0;
+
+}
+
+#memo-ticket-icon {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    color: #9C27B0;
 }

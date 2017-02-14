@@ -170,8 +170,16 @@ img {
 
 }
 .memo-rules-ticket {
-    margin: 15px 0 15px 0;
+    margin: 10px 0 10px 0;
 
+}
+
+.memo-rules-btn {
+    font-family: Lato;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #9C27B0;
 }
 
 #memo-ticket-icon {
@@ -179,4 +187,8 @@ img {
     -moz-transform: rotate(25deg);
     -o-transform: rotate(25deg);
     color: #9C27B0;
+}
+
+.game-timer-start {
+    margin-top: 20px;
 }

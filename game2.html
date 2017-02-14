@@ -39,25 +39,27 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="memo-rules-emptytop"></div>
-                <div class="memo-rules-title">
+                <div class="memo-rules-title text-center">
                     Zagraj w MEM-o MEMO
                 </div>
-                <div class="memo-rules-undertitle">
+                <div class="memo-rules-undertitle text-center">
                  z bohaterami popularnych memów
                 </div>
                 <div class="memo-rules-emptytop"></div>
-                <div class="memo-rules-win">
-                    Wygraj bilety do kina dla 2 osób
+                <div class="memo-rules-win text-center">
+                    Wygraj bilety do kina<br> dla 2 osób
                 </div>
-                <div class="memo-rules-ticket">
+                <div class="memo-rules-ticket text-center">
                     <div id="memo-ticket-icon"><i class="fa fa-ticket fa-4x" aria-hidden="true "></i></div>
 
                 </div>
 
-                <div class="memo-rules-btn">
-                    Naciśnij przycisk
+                <div class="memo-rules-btn text-center">
+                    <div>Masz 30 sekund<br><br> Kliknij przycisk:</div>
+                    <div><button type="button" class="btn btn-lg btn-default game-timer-start">START!</button></div>
+
                 </div>
-                <div class="timer" data-seconds-left=15></div>
+                <div class="timer" data-seconds-left=25></div>
                 <div>
                     </div>
                 <div class="memo-results"></div>
@@ -130,10 +132,35 @@
 
     <script>
 
+        $( ".game-timer-start" ).click(function() {
+            console.log("duoa");
 
-        $(function(){
+            window.setInterval(function(){
+console.log("ddd");
+                var numItems = $('.matched').length;
+
+                while ( numItems <= 16 ) {
+                    console.log("liczba: " + numItems);
+                }
+            }, 1000);
+
+
             $('.timer').startTimer({
+
                 onComplete: function(){
+                    var numItems = $('.matched').length;
+
+                    if ( numItems == 16 ) {
+                        console.log("You win!!");
+                    }
+
+                    else {
+                        console.log("You lost!!");
+
+                    }
+
+                    console.log(numItems + " num items");
+
                     console.log('Complete');
                 }
             });

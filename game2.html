@@ -18,7 +18,6 @@
     <script src="https://use.fontawesome.com/4da0cbc8ab.js"></script>
 
 
-
 </head>
 <body>
 
@@ -29,152 +28,163 @@
 
 
         <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-6" id="memo-title">
-          MEM-O MEMO
-        <div class="col-md-2"></div>
-    </div>
-
-
-        <div class="row">
-            <div class="col-md-4">
-                <div class="memo-rules-emptytop"></div>
-                <div class="memo-rules-title text-center">
-                    Zagraj w MEM-o MEMO
-                </div>
-                <div class="memo-rules-undertitle text-center">
-                 z bohaterami popularnych memów
-                </div>
-                <div class="memo-rules-emptytop"></div>
-                <div class="memo-rules-win text-center">
-                    Wygraj bilety do kina<br> dla 2 osób
-                </div>
-                <div class="memo-rules-ticket text-center">
-                    <div id="memo-ticket-icon"><i class="fa fa-ticket fa-4x" aria-hidden="true "></i></div>
-
-                </div>
-
-                <div class="memo-rules-btn text-center">
-                    <div>Masz 30 sekund<br><br> Kliknij przycisk:</div>
-                    <div><button type="button" class="btn btn-lg btn-default game-timer-start">START!</button></div>
-
-                </div>
-                <div class="timer" data-seconds-left=25></div>
-                <div>
-                    </div>
-                <div class="memo-results"></div>
-
-
+            <div class="col-md-4"></div>
+            <div class="col-md-6" id="memo-title">
+                MEM-O MEMO
+                <div class="col-md-2"></div>
             </div>
-            <div class="col-md-6">
-
-                <ol></ol>
-                <script>
-                    var arrImages = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
-                    for (var i = 0; i < 16; i++) {
-                        var num = Math.ceil(Math.random() * arrImages.length) - 1; //indeks obrazka
-                        var img = arrImages.splice(num, 1);
-                        $('ol').append(
-                                '<li class="' + img[0] + '" id="' + i + img[0] + '">' + '<img src="game_img/' + img[0] + '.jpg' + '">' + '</li>'
-                        );
-                    }
-                    var clickCount = 0;
-                    var imgClass1 = "";
-                    var imgClass2 = "";
-                    console.log('Click count: ' + clickCount);
 
 
-                    $('body').on('click', 'li', function () {
-                        if (clickCount == 0 && !$(this).children('img').hasClass('matched')) {
-                            $(this).children("img").addClass("img_selected");
-                            imgClass1 = $(this).attr('class');
-                            imgId1 = $(this).attr('id');
-                            clickCount++;
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="memo-rules-emptytop"></div>
+                    <div class="memo-rules-title text-center">
+                        Zagraj w MEM-o MEMO
+                    </div>
+                    <div class="memo-rules-undertitle text-center">
+                        z bohaterami popularnych memów
+                    </div>
+                    <div class="memo-rules-emptytop"></div>
+                    <div class="memo-rules-win text-center">
+                        Wygraj bilety do kina<br> dla 2 osób
+                    </div>
+                    <div class="memo-rules-ticket text-center">
+                        <div id="memo-ticket-icon"><i class="fa fa-ticket fa-4x" aria-hidden="true "></i></div>
+
+                    </div>
+
+                    <div class="memo-rules-btn text-center">
+                        <div>Masz 30 sekund<br><br> Kliknij przycisk:</div>
+                        <div>
+                            <button class="btn btn-lg btn-default game-timer-start">START!</button>
+                        </div>
+
+                    </div>
+                    <div class="timer timer-on" data-seconds-left=10></div>
+                    <div>
+                    </div>
+                    <div class="memo-results"></div>
+
+
+                </div>
+                <div class="col-md-6">
+
+                    <ol></ol>
+                    <script>
+                        var arrImages = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
+                        for (var i = 0; i < 16; i++) {
+                            var num = Math.ceil(Math.random() * arrImages.length) - 1; //indeks obrazka
+                            var img = arrImages.splice(num, 1);
+                            $('ol').append(
+                                    '<li class="' + img[0] + '" id="' + i + img[0] + '">' + '<img src="game_img/' + img[0] + '.jpg' + '">' + '</li>'
+                            );
                         }
+                        var clickCount = 0;
+                        var imgClass1 = "";
+                        var imgClass2 = "";
+                        console.log('Click count: ' + clickCount);
 
-                        else if (clickCount == 1 && $(this).attr('id') != imgId1 && !$(this).children('img').hasClass('matched')) {
-                            $(this).children("img").addClass("img_selected");
-                            imgClass2 = $(this).attr('class');
 
-                            if (imgClass1 === imgClass2) {
-                                $('li.' + imgClass2).children("img").addClass("matched");
-                                $('li.' + imgClass1).children("img").addClass("matched");
-                                console.log('img Class1: ' + imgClass1 + ' === img Class2: ' + imgClass2);
-                                clickCount = 0;
+                        $('body').on('click', 'li', function () {
+                            if (clickCount == 0 && !$(this).children('img').hasClass('matched')) {
+                                $(this).children("img").addClass("img_selected");
+                                imgClass1 = $(this).attr('class');
+                                imgId1 = $(this).attr('id');
+                                clickCount++;
+                            }
+
+                            else if (clickCount == 1 && $(this).attr('id') != imgId1 && !$(this).children('img').hasClass('matched')) {
+                                $(this).children("img").addClass("img_selected");
+                                imgClass2 = $(this).attr('class');
+
+                                if (imgClass1 === imgClass2) {
+                                    $('li.' + imgClass2).children("img").addClass("matched");
+                                    $('li.' + imgClass1).children("img").addClass("matched");
+                                    console.log('img Class1: ' + imgClass1 + ' === img Class2: ' + imgClass2);
+                                    clickCount = 0;
+                                }
+
+                                else {
+                                    setTimeout(function () {
+                                        $('img').not('img.matched').removeClass("img_selected");
+                                        clickCount = 0;
+                                    }, 2000);
+                                }
+                                clickCount++;
                             }
 
                             else {
-                                setTimeout(function () {
-                                    $('img').not('img.matched').removeClass("img_selected");
-                                    clickCount = 0;
-                                }, 2000);
+
+                                console.log("else");
                             }
-                            clickCount++;
-                        }
 
-                        else {
+                        });
+                    </script>
 
-                            console.log("else");
-                        }
 
-                    });
-                </script>
+                </div>
+                <div class="col-md-2"></div>
 
 
             </div>
-            <div class="col-md-2"></div>
 
 
         </div>
 
+        <script>
 
-    </div>
-
-    <script>
-
-        $( ".game-timer-start" ).click(function() {
-            console.log("duoa");
-
-            window.setInterval(function(){
-console.log("ddd");
-                var numItems = $('.matched').length;
-
-                while ( numItems <= 16 ) {
-                    console.log("liczba: " + numItems);
-                }
-            }, 1000);
+//            $(".game-timer-start").click(function () {
+$(".game-timer-start").on("click", function () {
 
 
-            $('.timer').startTimer({
-
-                onComplete: function(){
+                window.setInterval(function () {
                     var numItems = $('.matched').length;
 
-                    if ( numItems == 16 ) {
-                        console.log("You win!!");
+                    if (numItems == 16) {
+                        $(' .memo-results ').text("You win!!!");
                     }
 
                     else {
-                        console.log("You lost!!");
+                        $(' .memo-results ').text("Try further");
+//                        $('div').removeClass('game-timer-start').addClass('game-timer-start');
 
                     }
-
-                    console.log(numItems + " num items");
-
-                    console.log('Complete');
-                }
-            });
-        })
+                    }, 2000);
 
 
+                $('.timer').startTimer({
 
-    </script>
+                    onComplete: function () {
+                        var numItems = $('.matched').length;
+
+                        if (numItems == 16) {
+                            console.log("You win!!");
+                            $(' .memo-results ').text("You win!!!");
+
+                        }
+
+                        else {
+                            console.log("You lost!!");
+                            $(' .memo-results ').text("Try further");
+
+                        }
+
+                        console.log(numItems + " num items");
+
+                        console.log('Complete');
+                    }
+                });
+            }
+            )
 
 
-    <!--<iframe src="game.html"></iframe>-->
+        </script>
 
 
-</div>
+        <!--<iframe src="game.html"></iframe>-->
+
+
+    </div>
 </div>
 
 <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>

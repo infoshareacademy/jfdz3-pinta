@@ -15,6 +15,16 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+h1:after {
+    display: block;
+    height: 2px;
+    background-color: #BA68C8;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
 .section_margin_bottom {
     margin-bottom: 20px;
 }
@@ -39,6 +49,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .h_padding {
     padding: 20px;
+}
+
+.btn {
+    border-radius: 200px;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
 }
 
 /*-----------*/
@@ -185,6 +203,7 @@ div.slick .img-thumbnail {
 
 .how-works-under-image {
     text-align: center;
+    display: inline;
 }
 
 /*----------------*/
@@ -221,7 +240,6 @@ div.slick .img-thumbnail {
 .events-text {
     margin-top: 15px;
     text-transform: uppercase;
-    background-color: yellow;
     padding: 2px;
     font-weight: bold;
     background-color: #FFEB3B;
@@ -233,6 +251,9 @@ div.slick .img-thumbnail {
 /*  TESTIMONIAL   */
 /*  DZIENNIKARKA  */
 /*----------------*/
+.color-white {
+    color: white;
+}
 
 .testimonial-background {
     background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../img/background-img.jpg') no-repeat fixed center;

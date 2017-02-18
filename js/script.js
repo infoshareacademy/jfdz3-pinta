@@ -77,10 +77,26 @@ $(document).ready(function() {
     map.addMarker({
         lat: 53.4296143,
         lng: 14.4845406,
-        title: 'Lima', /* Write city name */
+        title: 'Gdańsk', /* Write city name */
         infoWindow: {
-            content: '<p>our office is here. </p>'
+            content: '<p>Our office is here. </p>'
         }
     });
 
+
 });
+
+// /* Animation on scroll */
+// $('.js--wp-1').waypoint(function(direction) {
+//     $('.js--wp-1').addClass('animated fadeIn');
+// }, {
+//     offset: '50%'
+// });
+//
+// $('.js--wp-2').waypoint(function(direction) {
+//     $('.js--wp-2').addClass('animated fadeIn');
+// }, {
+//     offset: '50%'
+
+
+

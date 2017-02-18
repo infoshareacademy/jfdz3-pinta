@@ -59,3 +59,28 @@ $(function () {
 
     });
 });
+
+
+
+$(document).ready(function() {
+
+    /* Maps */
+
+    var map = new GMaps({
+        div: '.map',
+        lat: 53.4296143,
+        lng: 14.5845406,
+        zoom: 12
+    });
+
+
+    map.addMarker({
+        lat: 53.4296143,
+        lng: 14.4845406,
+        title: 'Lima', /* Write city name */
+        infoWindow: {
+            content: '<p>our office is here. </p>'
+        }
+    });
+
+});

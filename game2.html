@@ -60,13 +60,13 @@
                         </div>
 
                     </div>
-                    <div class="timer timer-on" data-seconds-left=10></div>
+                    <div class="timer timer-on" data-seconds-left=90></div>
                     <div>
                     </div>
                     <div class="memo-results"></div>
 
 
-                </div>
+                </div>10
                 <div class="col-md-6">
 
                     <ol></ol>
@@ -141,11 +141,11 @@ $(".game-timer-start").on("click", function () {
                     var numItems = $('.matched').length;
 
                     if (numItems == 16) {
-                        $(' .memo-results ').text("You win!!!");
+                        $(' .memo-results ').text("Brawo! W nagrodę otrzymujesz kod na dwa bilety do kina: Qfz23a3");
                     }
 
                     else {
-                        $(' .memo-results ').text("Try further");
+                        $(' .memo-results ').text("Niestety tym razem się nie udało!");
 //                        $('div').removeClass('game-timer-start').addClass('game-timer-start');
 
                     }
@@ -187,7 +187,7 @@ $(".game-timer-start").on("click", function () {
     </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()"> open</span>
 
 <script>
     function openNav() {

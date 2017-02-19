@@ -11,14 +11,12 @@ $(document).on('scroll', function() {
 
 // smooth scroll from navbar to anchor
 
-    $(document).on('click', 'a', function(event){
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 1000);
-    });
-
-
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000);
+});
 
 // scroll to the top
 
@@ -63,42 +61,16 @@ $(function () {
 });
 
 
+    // /* Animation on scroll */
 
-
-
-    /* Maps */
-
-//     var map = new GMaps({
-//         div: '.map',
-//         lat: 53.4296143,
-//         lng: 14.5845406,
-//         zoom: 12
-//     });
-//
-//
-//     map.addMarker({
-//         lat: 53.4296143,
-//         lng: 14.4845406,
-//         title: 'Gdańsk', /* Write city name */
-//         infoWindow: {
-//             content: '<p>Our office is here. </p>'
-//         }
-//     });
-//
-//
-// });
-
-// /* Animation on scroll */
-// $('.js--wp-1').waypoint(function(direction) {
-//     $('.js--wp-1').addClass('animated fadeIn');
-// }, {
-//     offset: '50%'
-// });
-//
-// $('.js--wp-2').waypoint(function(direction) {
-//     $('.js--wp-2').addClass('animated fadeIn');
-// }, {
-//     offset: '50%'
-
-
-
+    // $('.js--wp-1').waypoint(function(direction) {
+    //     $('.js--wp-1').addClass('animated fadeIn');
+    // }, {
+    //     offset: '50%'
+    // });
+    //
+    // $('.js--wp-2').waypoint(function(direction) {
+    //     $('.js--wp-2').addClass('animated fadeInUp');
+    // }, {
+    //     offset: '50%'
+    // });

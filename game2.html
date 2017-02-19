@@ -60,13 +60,13 @@
                         </div>
 
                     </div>
-                    <div class="timer timer-on" data-seconds-left=90></div>
+                    <div class="timer timer-on" data-seconds-left=10></div>
                     <div>
                     </div>
                     <div class="memo-results"></div>
 
 
-                </div>10
+                </div>
                 <div class="col-md-6">
 
                     <ol></ol>
@@ -83,8 +83,6 @@
                         var imgClass1 = "";
                         var imgClass2 = "";
                         console.log('Click count: ' + clickCount);
-
-
                         $('body').on('click', 'li', function () {
                             if (clickCount == 0 && !$(this).children('img').hasClass('matched')) {
                                 $(this).children("img").addClass("img_selected");
@@ -92,18 +90,15 @@
                                 imgId1 = $(this).attr('id');
                                 clickCount++;
                             }
-
                             else if (clickCount == 1 && $(this).attr('id') != imgId1 && !$(this).children('img').hasClass('matched')) {
                                 $(this).children("img").addClass("img_selected");
                                 imgClass2 = $(this).attr('class');
-
                                 if (imgClass1 === imgClass2) {
                                     $('li.' + imgClass2).children("img").addClass("matched");
                                     $('li.' + imgClass1).children("img").addClass("matched");
                                     console.log('img Class1: ' + imgClass1 + ' === img Class2: ' + imgClass2);
                                     clickCount = 0;
                                 }
-
                                 else {
                                     setTimeout(function () {
                                         $('img').not('img.matched').removeClass("img_selected");
@@ -112,12 +107,9 @@
                                 }
                                 clickCount++;
                             }
-
                             else {
-
                                 console.log("else");
                             }
-
                         });
                     </script>
 
@@ -132,52 +124,35 @@
         </div>
 
         <script>
-
-//            $(".game-timer-start").click(function () {
-$(".game-timer-start").on("click", function () {
-
-
-                window.setInterval(function () {
-                    var numItems = $('.matched').length;
-
-                    if (numItems == 16) {
-                        $(' .memo-results ').text("Brawo! W nagrodę otrzymujesz kod na dwa bilety do kina: Qfz23a3");
-                    }
-
-                    else {
-                        $(' .memo-results ').text("Niestety tym razem się nie udało!");
+            //            $(".game-timer-start").click(function () {
+            $(".game-timer-start").on("click", function () {
+                        window.setInterval(function () {
+                            var numItems = $('.matched').length;
+                            if (numItems == 16) {
+                                $(' .memo-results ').text("You win!!!");
+                            }
+                            else {
+                                $(' .memo-results ').text("Try further");
 //                        $('div').removeClass('game-timer-start').addClass('game-timer-start');
-
+                            }
+                        }, 2000);
+                        $('.timer').startTimer({
+                            onComplete: function () {
+                                var numItems = $('.matched').length;
+                                if (numItems == 16) {
+                                    console.log("You win!!");
+                                    $(' .memo-results ').text("You win!!!");
+                                }
+                                else {
+                                    console.log("You lost!!");
+                                    $(' .memo-results ').text("Try further");
+                                }
+                                console.log(numItems + " num items");
+                                console.log('Complete');
+                            }
+                        });
                     }
-                    }, 2000);
-
-
-                $('.timer').startTimer({
-
-                    onComplete: function () {
-                        var numItems = $('.matched').length;
-
-                        if (numItems == 16) {
-                            console.log("You win!!");
-                            $(' .memo-results ').text("You win!!!");
-
-                        }
-
-                        else {
-                            console.log("You lost!!");
-                            $(' .memo-results ').text("Try further");
-
-                        }
-
-                        console.log(numItems + " num items");
-
-                        console.log('Complete');
-                    }
-                });
-            }
             )
-
-
         </script>
 
 
@@ -187,13 +162,12 @@ $(".game-timer-start").on("click", function () {
     </div>
 </div>
 
-<span style="font-size:30px;cursor:pointer" onclick="openNav()"> open</span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 <script>
     function openNav() {
         document.getElementById("myNav").style.width = "100%";
     }
-
     function closeNav() {
         document.getElementById("myNav").style.width = "0%";
     }
@@ -202,3 +176,5 @@ $(".game-timer-start").on("click", function () {
 
 </body>
 </html>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

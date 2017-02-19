@@ -299,7 +299,7 @@ div.slick .img-thumbnail {
 .background_contact {
     background-color: rgb(124, 122, 124);
     color: white;
-    padding-bottom: 5px;
+    /*padding-bottom: 5px;*/
 }
 
 .contact-us-icons {

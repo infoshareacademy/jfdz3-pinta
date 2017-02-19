@@ -5,20 +5,20 @@
     <title>Pinta. Najlepsze wydarzenia w Trójmieście</title>
     <link href="img/favicon-pinta.ico" rel="icon" type="image/x-icon"/>
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <!--<link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/queries.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" type="text/css"
           rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <script src="https://use.fontawesome.com/4da0cbc8ab.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/queries.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-    <script src="js/script.js"></script>
+
 </head>
 <body>
 
-<div class="container-fluid">
+    <!--<div class="container-fluid">-->
 
     <!--background & nav -->
 
@@ -515,32 +515,32 @@
         <div class="col-md-12">
         </div>
     </div>
-</div>
+    <!--</div>-->
 
 <script src="bootstrap/jquery.min.js"></script>
 <script src="bootstrap/bootstrap.min.js"></script>
 
 
 <script src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 <!-- Maps -->
-
-<script>
-    function initMap() {
-        var uluru = {lat: 54.307295, lng: 18.5698227};
-        var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 16,
-            center: uluru
-        });
-        var marker = new google.maps.Marker({
-            position: uluru,
-            map: map
-        });
-    }
-</script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx6MNMMpf81DuI4zK7qszlRl2mknyclHA&callback=initMap">
-</script>
-
+    <script>
+        function initMap() {
+            var uluru = {lat: 54.307295, lng: 18.5698227};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx6MNMMpf81DuI4zK7qszlRl2mknyclHA&callback=initMap">
+    </script>
+    <script src="js/script.js"></script>
 
 
 </body>

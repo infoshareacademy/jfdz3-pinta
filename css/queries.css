@@ -52,7 +52,10 @@
     section { padding: 25px 0; }
     .context-form { width: 100%}
     .row {max-widows:100%;}
-    
+
+    .form-box {
+        padding-top: 10px;
+    }
 }
 
 

@@ -76,7 +76,7 @@
                             var num = Math.ceil(Math.random() * arrImages.length) - 1; //indeks obrazka
                             var img = arrImages.splice(num, 1);
                             $('ol').append(
-                                    '<li class="' + img[0] + '" id="' + i + img[0] + '">' + '<img src="game_img/' + img[0] + '.jpg' + '">' + '</li>'
+                                    '<li class="memo-li ' + img[0] + '" id="' + i + img[0] + '">' + '<img src="game_img/' + img[0] + '.jpg' + '">' + '</li>'
                             );
                         }
                         var clickCount = 0;

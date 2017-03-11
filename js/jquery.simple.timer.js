@@ -50,11 +50,11 @@
     opts = opts || {};
     var classNames = opts.classNames || {};
 
-    timer._options.classNameSeconds       = classNames.seconds  || 'jst-seconds'
-      , timer._options.classNameMinutes   = classNames.minutes  || 'jst-minutes'
-      , timer._options.classNameHours     = classNames.hours    || 'jst-hours'
-      , timer._options.classNameClearDiv  = classNames.clearDiv || 'jst-clearDiv'
-      , timer._options.classNameTimeout   = classNames.timeout || 'jst-timeout';
+    timer._options.classNameSeconds       = classNames.seconds  || 'memo-timer_seconds'
+      , timer._options.classNameMinutes   = classNames.minutes  || 'memo-timer_minutes'
+      , timer._options.classNameHours     = classNames.hours    || 'memo-timer_hours'
+      , timer._options.classNameClearDiv  = classNames.clearDiv || 'memo-timer_clearDiv'
+      , timer._options.classNameTimeout   = classNames.timeout || 'memo-timer_timeout';
   }
 
   Timer.prototype.start = function(options) {
@@ -194,9 +194,9 @@
   };
 
   Timer.prototype.clearTimer = function(element){
-    element.find('.jst-seconds').text('00');
-    element.find('.jst-minutes').text('00:');
-    element.find('.jst-hours').text('00:');
+    element.find('.memo-timer_seconds').text('00');
+    element.find('.memo-timer_minutes').text('00:');
+    element.find('.memo-timer_hours').text('00:');
   };
 
   Timer.prototype.currentTime = function() {

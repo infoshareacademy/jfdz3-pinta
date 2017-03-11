@@ -81,7 +81,7 @@
 /*}*/
 
 ul { padding: 0;  margin: 0;}
-li {
+.memo-li {
     width: 100px;
     height: 100px;
     padding: 0;
@@ -125,19 +125,19 @@ img {
     display: inline-block;
 }
 
-.jst-hours {
+.memo-timer_hours {
     float: left;
 }
-.jst-minutes {
+.memo-timer_minutes {
     float: left;
 }
-.jst-seconds {
+.memo-timer_seconds {
     float: left;
 }
-.jst-clearDiv {
+.memo-timer_clearDiv {
     clear: both;
 }
-.jst-timeout {
+.memo-timer_timeout {
     color: red;
 }
 
